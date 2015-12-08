@@ -1,0 +1,5 @@
+puts "I remember:"
+puts ".sort , .length, .reverse, .empty?, .insert, .delete, .chomp, .chop, .has_key?, .keys"
+puts "Let me see...what else?"
+puts ".succ, .append, .concat, .methods, .gsub, .replace, .fetch, ...hmm... .upcase, .downcase, .swapcase, .capitalize"
+puts "I guess that's it for now!"
