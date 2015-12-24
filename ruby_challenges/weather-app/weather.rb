@@ -7,9 +7,6 @@ end
 	
 
 
-puts "Hello. What is your location?"
+puts "Hello. What is your zip code, please?"
 
 location = gets.chomp
-
-
-

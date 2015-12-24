@@ -7,17 +7,11 @@ location = gets.chomp
 def weather (location)
 
 client = Weatherman::Client.new
-response = client.lookup_by_woeid 455821
 
-response.location['city'] # => "Belo Horizonte"
-response.location['country'] # => "Brazil"
-response.condition['date'] # => #<Date: -1/2,0,2299161>
-
-ptbr_client = Weatherman::Client.new :lang # => 'pt-br'
-response = ptbr_client.lookup_by_woeid 455821
-
-response.condition['text'] # => "Parcialmente Nublado"
-response.condition['country'] # => "Brasil"
+client.lookup_by_location('66061').condition['temp']
+client.lookup_by_location('olathe, ks').condition['temp']
+client.lookup_by_location('north pole').condition['temp']
+client.lookup_by_location('sydney opera house').condition['temp']
 
 end
 
